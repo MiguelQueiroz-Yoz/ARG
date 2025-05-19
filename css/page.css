@@ -1,0 +1,13 @@
+body {
+  background-color: #000000;
+}
+.stanley {
+  cursor: pointer;
+    user-select: none;
+  -webkit-user-drag: none;
+}
+
+.k7 {
+    user-select: none;
+  -webkit-user-drag: none;
+}
