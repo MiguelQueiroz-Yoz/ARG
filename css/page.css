@@ -1,0 +1,66 @@
+body {
+  background-color: #000000;
+}
+
+.stanley {
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.k7 {
+  user-select: none;
+  -webkit-user-drag: none;
+  width: 700px !important;
+}
+
+img.stanley {
+  width: 450px !important;
+  cursor: pointer;
+}
+
+img.presente {
+  width: 500px !important;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+img.thing {
+  width: 5px !important;
+  cursor: pointer;
+  display: block;
+  user-select: none;
+}
+
+audio.k7 {
+  width: 30% !important;
+  height: 32px !important;
+}
+
+#infotext{
+	color: white;
+	text-align: center;
+	font-size: 175%;
+}
+
+#zwsp {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  visibility: hidden;
+  font-size: 80px;
+}
+
+#info{
+	position: absolute;
+	color: #000000;
+	left: 140px;
+	text-align: center;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+}

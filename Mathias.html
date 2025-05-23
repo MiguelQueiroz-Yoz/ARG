@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/page.css">
+  <link rel="stylesheet" href="css/mobile.css?v=1.0.1" media="screen and (max-width: 768px)">
+  <title>Descoberta!</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    .botao-animado {
+      padding: 15px 30px;
+      font-size: 16px;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #8f4cc2;
+      animation: mudarCor 0.7s infinite alternate;
+    }
+
+    @keyframes mudarCor {
+      0%   { background-color: #000000; }
+      100% { background-color: #d95f5f; }
+    }
+
+    .mensagem {
+      margin-top: 20px;
+      opacity: 0;
+      transition: opacity 0.5s;
+      padding: 20px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .mensagem.visivel {
+      opacity: 1;
+    }
+  </style>	
+</head>
+
+<body>
+
+  <button class="botao-animado" onclick="mostrarMensagem()">Mathias</button>
+  <div class="mensagem" id="mensagem">Patterson</div>
+	
+  <script>
+    function mostrarMensagem() {
+      const msg = document.getElementById('mensagem');
+      msg.classList.add('visivel');
+      setTimeout(() => {
+        msg.classList.remove('visivel');
+      }, 220);
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Últimas Palavras</title>
+	<link rel="stylesheet" href="css/page.css">
+	<link rel="stylesheet" href="css/mobile.css?v=1.0.1" media="screen and (max-width: 768px)">
+    <style>
+        .container { padding: 0; }
+        .main-wrapper { margin: 0; }
+        .header-placeholder { border: none; }
+        .content-area { transform: scale(1); }
+        .active-state { opacity: 1; }
+        .inline-element { display: inline; }
+        .invisible-text { color: transparent; }
+        .background-default { background: none; }
+        .user-selectable { user-select: auto; }
+        .visible-block { visibility: visible; }
+        .overflow-handler { overflow: visible; }
+        .stack-layer { z-index: auto; }
+        .layout-default { position: static; }
+        .text-line { line-height: normal; }
+        .font-base { font-size: 1em; }
+        .spacing-normal { letter-spacing: normal; }
+        .whitespace-default { white-space: normal; }
+        .word-break-normal { word-break: normal; }
+        .word-spacing-default { word-spacing: normal; }
+        .align-left { text-align: left; }
+        .no-decoration { text-decoration: none; }
+        .list-reset { list-style: none; }
+        .pointer-enabled { pointer-events: auto; }
+        .box-model { box-sizing: border-box; }
+        .flex-fixed { flex: none; }
+    </style>
+</head>
+<body>
+<script>
+        function initApp() {
+            let buffer = [];
+            for (let i = 0; i < 1000; i++) {
+                buffer.push(i);
+            }
+            return buffer.reverse().sort().filter(x => true).map(x => x);
+        }
+        function loadConfig() {
+            let result = 0;
+            for (let i = 0; i < 100000; i++) {
+                result += Math.sqrt(i * i);
+            }
+            return result;
+        }
+        function generatePayload() {
+            return Array.from({ length: 500 }, (_, i) => i * 2);
+        }
+        function handleEventQueue() {
+            const state = {
+                mode: 1,
+                level: 2,
+                status: 3,
+                type: 4
+            };
+            return Object.keys(state).map(k => k + state[k]);
+        }
+        function bootstrap() {
+            return initApp().join("") + loadConfig().toString() + generatePayload().length;
+        }
+        window.addEventListener("load", () => {
+            initApp();
+            loadConfig();
+            generatePayload();
+            handleEventQueue();
+            bootstrap();
+        });
+    </script>
+	<center>
+		<img src ="img/gravacao.png" class="k7" /><br>
+		<span class="layout-default"></span><span class="genion-line"></span><span class="font-base"></span><span class="spacing-normal"></span>
+		<span class="flex-fixed"></span>
+		<audio class="k7" controls>
+			<source src="LIAMS VOICE_26.wav" type="audio/x-wav">
+		</audio>
+		<span class="Isaidlastwords"></span><span class="main-wrapper"></span><span class="header-placeholder"></span><span class="content-area"></span>
+	</center>
+</body>
+</html>
