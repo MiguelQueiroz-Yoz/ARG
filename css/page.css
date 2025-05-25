@@ -9,6 +9,7 @@ body {
 }
 
 .k7 {
+  cursor: pointer;
   user-select: none;
   -webkit-user-drag: none;
   width: 700px !important;
